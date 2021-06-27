@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".ui.listview.ListViewFragment">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginBottom="20dp"
+        android:text="ListView Screens"/>
+
+    <Button
+        android:id="@+id/simple_list_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simple List"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <Button
+        android:id="@+id/multi_type_list_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Multi Type List"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <Button
+        android:id="@+id/stable_id_list_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stable ID List"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <Button
+        android:id="@+id/expandable_list_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Expandable List"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <Button
+        android:id="@+id/endless_loading_list_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Endless Loading List"/>
+
+</LinearLayout>

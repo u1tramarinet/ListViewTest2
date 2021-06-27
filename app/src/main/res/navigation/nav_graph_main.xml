@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.u1tramarinet.listviewtest2.ui.main.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main">
+
+        <action
+            android:id="@+id/action_mainFragment_to_list_view_nav_graph"
+            app:destination="@id/list_view_nav_graph"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_mainFragment_to_recycler_view_nav_graph"
+            app:destination="@id/recycler_view_nav_graph"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <navigation
+        android:id="@+id/list_view_nav_graph"
+        app:startDestination="@id/listViewFragment">
+        <fragment
+            android:id="@+id/listViewFragment"
+            android:name="com.u1tramarinet.listviewtest2.ui.listview.ListViewFragment"
+            android:label="fragment_list_view"
+            tools:layout="@layout/fragment_list_view">
+
+            <action
+                android:id="@+id/action_listViewFragment_to_simpleListViewFragment"
+                app:destination="@id/simpleListViewFragment" />
+            <action
+                android:id="@+id/action_listViewFragment_to_multiTypeListViewFragment"
+                app:destination="@id/multiTypeListViewFragment" />
+            <action
+                android:id="@+id/action_listViewFragment_to_stableIdListViewFragment"
+                app:destination="@id/stableIdListViewFragment" />
+            <action
+                android:id="@+id/action_listViewFragment_to_endlessLoadingListViewFragment"
+                app:destination="@id/endlessLoadingListViewFragment" />
+            <action
+                android:id="@+id/action_listViewFragment_to_expandableListViewFragment"
+                app:destination="@id/expandableListViewFragment" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/simpleListViewFragment"
+            android:name="com.u1tramarinet.listviewtest2.ui.listview.simple.SimpleListViewFragment"
+            android:label="fragment_simple_list_view"
+            tools:layout="@layout/fragment_base_list_view" />
+
+        <fragment
+            android:id="@+id/multiTypeListViewFragment"
+            android:name="com.u1tramarinet.listviewtest2.ui.listview.multitype.MultiTypeListViewFragment"
+            android:label="fragment_multi_type_list_view"
+            tools:layout="@layout/fragment_base_list_view" />
+
+        <fragment
+            android:id="@+id/stableIdListViewFragment"
+            android:name="com.u1tramarinet.listviewtest2.ui.listview.stableid.StableIdListViewFragment"
+            android:label="fragment_stable_id_list_view"
+            tools:layout="@layout/fragment_base_list_view" />
+
+        <fragment
+            android:id="@+id/expandableListViewFragment"
+            android:name="com.u1tramarinet.listviewtest2.ui.listview.expandable.ExpandableListViewFragment"
+            android:label="fragment_expandable_list_view"
+            tools:layout="@layout/fragment_expandable_list_view" />
+
+        <fragment
+            android:id="@+id/endlessLoadingListViewFragment"
+            android:name="com.u1tramarinet.listviewtest2.ui.listview.endlessloading.EndlessLoadingListViewFragment"
+            android:label="fragment_endless_loading_list_view"
+            tools:layout="@layout/fragment_base_list_view" />
+    </navigation>
+
+    <navigation
+        android:id="@+id/recycler_view_nav_graph"
+        app:startDestination="@id/recyclerViewFragment">
+        <fragment
+            android:id="@+id/recyclerViewFragment"
+            android:name="com.u1tramarinet.listviewtest2.ui.recyclerview.RecyclerViewFragment"
+            android:label="fragment_recycler_view"
+            tools:layout="@layout/fragment_recycler_view">
+
+        </fragment>
+    </navigation>
+
+</navigation>
