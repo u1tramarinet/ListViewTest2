@@ -51,6 +51,9 @@
             <action
                 android:id="@+id/action_listViewFragment_to_expandableListViewFragment"
                 app:destination="@id/expandableListViewFragment" />
+            <action
+                android:id="@+id/action_listViewFragment_to_includeButtonListFragment"
+                app:destination="@id/includeButtonListFragment" />
         </fragment>
 
         <fragment
@@ -82,6 +85,11 @@
             android:name="com.u1tramarinet.listviewtest2.ui.listview.endlessloading.EndlessLoadingListViewFragment"
             android:label="fragment_endless_loading_list_view"
             tools:layout="@layout/fragment_base_list_view" />
+        <fragment
+            android:id="@+id/includeButtonListFragment"
+            android:name="com.u1tramarinet.listviewtest2.ui.listview.includebutton.IncludeButtonListFragment"
+            android:label="fragment_include_button_list"
+            tools:layout="@layout/fragment_include_button_list" />
     </navigation>
 
     <navigation

@@ -38,6 +38,7 @@ public class ListViewFragment extends Fragment {
         setupAction(view, R.id.stable_id_list_button, ListViewFragmentDirections.actionListViewFragmentToStableIdListViewFragment());
         setupAction(view, R.id.endless_loading_list_button, ListViewFragmentDirections.actionListViewFragmentToEndlessLoadingListViewFragment());
         setupAction(view, R.id.expandable_list_button, ListViewFragmentDirections.actionListViewFragmentToExpandableListViewFragment());
+        setupAction(view, R.id.include_button_list_button, ListViewFragmentDirections.actionListViewFragmentToIncludeButtonListFragment());
     }
 
     private void setupAction(@NonNull View root, @IdRes int resId, @NonNull NavDirections action) {

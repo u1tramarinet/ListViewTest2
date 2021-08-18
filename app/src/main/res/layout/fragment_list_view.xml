@@ -61,4 +61,14 @@
         android:layout_height="wrap_content"
         android:text="Endless Loading List"/>
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <Button
+        android:id="@+id/include_button_list_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Include button List"/>
+
 </LinearLayout>
